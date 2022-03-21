@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Pokedex_LC.js"></script>
+    <link rel="stylesheet" href="Pokedex_LC.css">
+    <title>Pokedex</title>
+</head>
+<body>
+    <div class="Container">
+        <div class="S1">
+            <div>
+                <img src="./Imagenes/PokeLogo.png" alt="Logo">
+            </div>
+            <div>
+                <input class="Search" type="text" placeholder="Pokemon Name" id="Name_P" name="Name_P">
+            </div>
+            <div>
+                <button onclick="fetchPokemon()">Search</button>
+            </div>
+        </div>
+        <div class="S2">
+            <div class="Marco">
+                <input type="text" name="Name" id="Name" class="Data" readonly="true">
+                <div class="Display">
+                    <img src="./Imagenes/Dex.png" id="pokeImg" alt="Dex" width="250px" height="250px">
+                </div>
+                <input type="text" name="ID" id="ID" class="Data" readonly="true">
+            </div>
+            
+         
+                <img src="./Imagenes/Lights.png" alt="Lights" width="75px" height="75px">
+            
+            <div class="Info">
+                <div>
+                    <p style="text-align: center;">Type</p>
+                    <input class="Tipo" type="text" name="Type" id="pokeType" readonly="true">
+                </div>
+                <div>
+                    <table class="Stats">
+                        <tr>
+                            <th style="text-align: right;">HP:</th>
+                            <td><input class="Tipo" type="text" name="HP" id="HP" readonly="true"></td>
+                            <td>
+                                <th style="text-align: right;">SP.Atk:</th>
+                                <td><input class="Tipo" type="text" name="SP_D" id="SP_Atk" readonly="true"></td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th style="text-align: right;">Attack:</th>
+                            <td><input class="Tipo" type="text" name="Atk" id="Atk" readonly="true"></td>
+                            <td>
+                                <th style="text-align: right;">SP.Def:</th>
+                                <td><input class="Tipo" type="text" name="SP_D" id="SP_Def" readonly="true"></td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th style="text-align: right;">Defense:</th>
+                            <td><input class="Tipo" type="text" name="Def" id="Def" readonly="true"></td>
+                            <td>
+                                <th style="text-align: right;">Speed:</th>
+                                <td><input class="Tipo" type="text" name="Speed" id="Speed" readonly="true"></td>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <p style="text-align: center;">Moves</p>
+                    <table class="Moves">
+                        <tr>
+                            <input class="Move" type="text" name="Move1" id="Move1" readonly="true">
+                        </tr>
+                        <tr>
+                            <input class="Move" type="text" name="Move2" id="Move2" readonly="true">
+                        </tr>
+                        <tr>
+                            <input class="Move" type="text" name="Move3" id="Move3" readonly="true">
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<footer>
+    <link rel="stylesheet" href="Pokedex_LC.css">
+</footer>
+</html>
+
